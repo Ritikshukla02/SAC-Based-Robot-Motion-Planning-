@@ -1,107 +1,55 @@
 # SAC-Based-Robot-Motion-Planning
 Soft Actor-Critic (SAC) based collision-free motion planning for a triangular robot with goal position and orientation control.
+![Best Trajectory](images/best_trajectory.png)
 ## Project Overview
 
-This project presents a collision-free motion planning framework for a triangular mobile robot using Soft Actor-Critic (SAC), a deep reinforcement learning algorithm.
+This project presents a reinforcement learning framework for collision-free motion planning using the Soft Actor-Critic (SAC) algorithm.
 
-The agent learns to navigate from the start position to the target while avoiding obstacles and achieving the desired final orientation. Instead of following a predefined path, the robot learns an optimal policy through continuous interaction with the environment and a carefully designed reward function.
-## Project Demonstration
-### Environment
+The objective is to navigate a triangular mobile robot from the start position to the target while avoiding obstacles and achieving the desired final orientation. Instead of relying on predefined trajectories, the agent learns an optimal navigation policy through interaction with the environment and a custom-designed reward function.
+## Why Reinforcement Learning?
 
-![Environment](images/environment.png)
-### Best Trajectory
+Traditional motion planning methods usually depend on handcrafted rules or predefined paths.
 
-![Best Trajectory](images/best_trajectory.png)
-### Reward Design
+In contrast, reinforcement learning enables the robot to learn collision-free navigation directly from interaction with the environment, making the learned policy more flexible for different obstacle configurations.
+## Project Highlights
 
-![Reward Design](images/reward_design.png)
-### Trajectory Animation
-
- **Video:** [trajectory_animation.mp4](videos/trajectory_animation.mp4)
- ## Features
-
-- Collision-free robot navigation using Soft Actor-Critic (SAC)
-- Continuous action space control
-- Goal position and orientation optimization
-- Custom reward function for navigation and obstacle avoidance
+- Collision-free trajectory generation
+- Soft Actor-Critic (SAC) based continuous control
+- Simultaneous position and orientation optimization
+- Custom reward function for robot navigation
 - Trajectory visualization and animation
-- Easy-to-extend simulation environment
+- Goal-reaching behavior learned without predefined paths
+## Final Result
 
-## System Pipeline
-
-Environment
-
-↓
-
-State Observation
-
-↓
-
-SAC Agent
-
-↓
-
-Action Selection
-
-↓
-
-Robot Motion
-
-↓
-
-Reward Calculation
-
-↓
-
-Policy Update
-
-
-## Final Results
-
-| Metric | Value |
-|---------|------:|
+| Metric | Result |
+|---------|--------|
 | Algorithm | Soft Actor-Critic (SAC) |
 | Goal Reached | ✅ Yes |
 | Distance Error | 9.89 mm |
 | Orientation Error | 0.46° |
 | Collision | No |
+## Simulation Environment
 
-## Repository Structure
+![Simulation Environment](images/environment.png)
+## Trajectory Animation
 
-├── docs/
-├── images/
-├── models/
-├── trajectories/
-├── videos/
-├── README.md
-├── requirements.txt
-├── train.py
-├── evaluate.py
-└── environment.py
+![Trajectory Animation](videos/trajectory_animation.gif)
+## SAC Framework
 
-## Installation
+![SAC Framework](images/sac_framework.png)
+## Reward Function
 
-```bash
-git clone https://github.com/yourusername/SAC-Based-Robot-Motion-Planning.git
+![Reward Function](images/reward_design.png)
+## Detailed Documentation
 
-cd SAC-Based-Robot-Motion-Planning
-
-pip install -r requirements.txt
-```
-
-## Training
-
-```bash
-python train.py
-```
-
-## Future Improvements
+- [Project Overview](docs/project_overview.md)
+- [System Pipeline](docs/system_pipeline.md)
+- [Reward Function](docs/reward_function.md)
+- [Results and Evaluation](docs/results_and_evaluation.md)
+- [Limitations and Future Work](docs/limitations_and_future_work.md)
+  ## Future Improvements
 
 - Dynamic obstacle avoidance
-- Real robot implementation
-- Multi-goal navigation
-- Sim-to-real transfer
-- Comparison with other reinforcement learning algorithms
-## Acknowledgements
-
-This project was developed as part of my internship on reinforcement learning for autonomous robot motion planning using Soft Actor-Critic (SAC).
+- Multiple robot navigation
+- Sim-to-real deployment
+- Benchmarking with other reinforcement learning algorithms
