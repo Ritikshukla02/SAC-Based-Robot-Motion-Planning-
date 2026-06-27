@@ -1,11 +1,11 @@
-#Project Overview
-##Problem Setup
+# Project Overview
+## Problem Setup
 
 The task is to generate a collision-free trajectory for a triangular mobile robot using reinforcement learning.
 
 The robot starts from a predefined position and must reach the target while avoiding obstacles and achieving the desired final orientation.
 
-##Simulation Environment
+## Simulation Environment
 
 The environment contains the following components:
 
@@ -18,7 +18,7 @@ Continuous action space
 
 
 
-##Learning Objective
+## Learning Objective
 
 The agent learns a navigation policy by interacting with the environment. During training, the policy is updated continuously based on the reward received after each action.
 
