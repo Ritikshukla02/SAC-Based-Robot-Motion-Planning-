@@ -1,69 +1,31 @@
-# Project Overview
+#Project Overview
+##Problem Setup
 
-## Objective
+The task is to generate a collision-free trajectory for a triangular mobile robot using reinforcement learning.
 
-The objective of this project is to generate a collision-free trajectory for a triangular mobile robot using reinforcement learning.
+The robot starts from a predefined position and must reach the target while avoiding obstacles and achieving the desired final orientation.
 
-The robot starts from a predefined position and learns how to reach the target while avoiding obstacles and achieving the required final orientation.
+##Simulation Environment
 
----
+The environment contains the following components:
 
-## Problem Statement
+Triangular mobile robot
+Static obstacle
+Goal position
+Goal orientation
+Continuous action space
 
-Traditional motion planning methods usually require predefined paths or manually designed planning algorithms.
 
-In this project, the robot learns the navigation policy directly through interaction with the environment using the Soft Actor-Critic (SAC) algorithm.
 
----
 
-## Project Workflow
+##Learning Objective
 
-Start Position
+The agent learns a navigation policy by interacting with the environment. During training, the policy is updated continuously based on the reward received after each action.
 
-↓
+The learned policy aims to satisfy the following objectives simultaneously:
 
-Observe Environment
+Reach the target position
+Avoid obstacle collision
+Achieve the desired final orientation
 
-↓
-
-Select Action using SAC
-
-↓
-
-Move Robot
-
-↓
-
-Receive Reward
-
-↓
-
-Update Policy
-
-↓
-
-Repeat until Goal is Reached
-
----
-
-## Environment
-
-The simulation environment consists of:
-
-- Triangular mobile robot
-- Static obstacle
-- Goal position
-- Goal orientation
-- Continuous action space
-
-![Environment](../images/environment.png)
-
----
-
-## Project Goal
-
-The learning process aims to satisfy three objectives simultaneously:
-
-- Reach the target position
-- Avoid obstacle collision
-- Achieve the desired final orientation
+Unlike traditional path planning methods, no predefined trajectory is provided to the robot during training.
