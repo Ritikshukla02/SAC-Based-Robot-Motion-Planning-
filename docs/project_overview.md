@@ -56,8 +56,6 @@ The simulation environment consists of:
 - Goal orientation
 - Continuous action space
 
-> **Insert Environment Image**
-
 ![Environment](../images/environment.png)
 
 ---
