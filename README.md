@@ -104,4 +104,4 @@ python train.py
 - Comparison with other reinforcement learning algorithms
 ## Acknowledgements
 
-This project was developed as part of my research on reinforcement learning for autonomous robot motion planning using Soft Actor-Critic (SAC).
+This project was developed as part of my internship on reinforcement learning for autonomous robot motion planning using Soft Actor-Critic (SAC).
