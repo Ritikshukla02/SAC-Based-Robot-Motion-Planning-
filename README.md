@@ -108,7 +108,7 @@ SAC-Based-Robot-Motion-Planning/
 ## Installation
 
 ```bash
-git clone https://github.com/<Ritikshukla02>/SAC-Based-Robot-Motion-Planning.git
+git clone https://github.com/Ritikshukla02/SAC-Based-Robot-Motion-Planning.git
 
 cd SAC-Based-Robot-Motion-Planning
 
