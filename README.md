@@ -63,9 +63,7 @@ In contrast, reinforcement learning enables the robot to learn collision-free na
 
 ## Trajectory Animation
 
- **Trajectory Animation**
-
-[trajectory_GIF](videos/trajectory_gif.gif)
+[trajectory_gif.gif](videos/trajectory_gif.gif)
 
 ---
 
