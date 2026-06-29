@@ -48,7 +48,7 @@ In contrast, reinforcement learning enables the robot to learn collision-free na
 | Metric | Result |
 |---------|--------|
 | Algorithm | Soft Actor-Critic (SAC) |
-| Goal Reached | ✅ Yes |
+| Goal Reached | Yes |
 | Distance Error | **9.89 mm** |
 | Orientation Error | **0.46°** |
 | Collision | **No** |
@@ -63,11 +63,9 @@ In contrast, reinforcement learning enables the robot to learn collision-free na
 
 ## Trajectory Animation
 
-> Replace the link below with your final animation.
+ **Trajectory Animation**
 
-📽️ **Trajectory Animation**
-
-[trajectory_animation.mp4](videos/trajectory_animation.mp4)
+[trajectory_GIF](videos/trajectory_gif.gif)
 
 ---
 
