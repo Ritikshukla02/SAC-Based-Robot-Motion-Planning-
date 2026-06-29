@@ -1,1 +1,10 @@
+# Install all required dependencies
+# pip install -r requirements.txt
 
+gymnasium>=1.0.0
+stable-baselines3>=2.6.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+pandas>=2.2.0
+shapely>=2.0.0
+torch>=2.2.0
