@@ -132,10 +132,13 @@ def draw_scene(triangle1, triangle2=None):
     plt.legend()
     plt.show()
 #------------------------
-draw_scene(
-    start_triangle,
-    goal_triangle
-)
+if __name__ == "__main__":
+
+    draw_scene(
+        start_triangle,
+        goal_triangle
+    )
+
 #define Rectangle ----------------------------------------------- main start from here
 rectangle_poly = ShapelyPolygon([
     (RECT_X, RECT_Y),
