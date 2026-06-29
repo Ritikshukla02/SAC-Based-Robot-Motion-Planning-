@@ -5,7 +5,7 @@ the robot trajectory for visualization.
 
 from stable_baselines3 import SAC     # loading Model
 
-model = SAC.load("/content/drive/MyDrive/PBL_Internship/sac_new_V2_U5.zip")
+model = SAC.load("../models/best_sac_model")
 
 obs, _ = env.reset()                          # generating file tracjectroy
 
